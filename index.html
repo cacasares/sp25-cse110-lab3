@@ -17,17 +17,18 @@
  <!-- h1 are the biggest headers -->
 <header>
 <h1>MEETING MINUTES!</h1>
+<nav class="bar">
+  <!-- ul is an unordered bullet list -->
+   <!-- li is for an item in an ol or ul list -->
+  <ul> 
+      <!-- a defines a hyperlink -->
+      <li> <a href=https://ucsd.edu>UCSD</a></li>
+      <li> <a href=https://canvas.ucsd.edu>UCSD Canvas</a></li>
+  </ul>
+</nav>
 </header>
 <!-- nav is for a set of navigation links -->
-<nav class="bar">
-    <!-- ul is an unordered bullet list -->
-     <!-- li is for an item in an ol or ul list -->
-    <ul> 
-        <!-- a defines a hyperlink -->
-        <li> <a href=https://ucsd.edu>UCSD</a></li>
-        <li> <a href=https://canvas.ucsd.edu>UCSD Canvas</a></li>
-    </ul>
-</nav>
+
   <body>
     <!-- div groups elements -->
     <div class="main-container">
@@ -98,7 +99,7 @@
           </select>
         </section> 
         <section>
-          <label for="Meeting Date">Meeting date:</label>
+          <label for="MeetingDate">Meeting date:</label>
           <!-- input of date -->
           <input
             type="date"
@@ -129,11 +130,13 @@
           </form>
         </section>
         <section>
-          Present Members:
-          <li> Carl Casares</li>
-          <li> EJ Garcia</li>
-          <li> Jonathan Nguyen  </li>
-          <li> Kang Seulgi</li>
+          <p>Present Members:</p>
+          <ul>
+            <li> Carl Casares</li>
+            <li> EJ Garcia</li>
+            <li> Jonathan Nguyen  </li>
+            <li> Kang Seulgi</li>
+          </ul>
         </section> 
         <hr>
         <section>
@@ -170,16 +173,16 @@
             <legend>Choose this meeting's MVP's:</legend>
             <div>
               <!-- input checkbox defines a checkbox -->
-              <input type="checkbox" id="Carl Casares" name="Carl Casares" />
-              <label for = "Carl Casares">Carl Casares</label>
+              <input type="checkbox" id="CarlCasares" name="Carl Casares" />
+              <label for = "CarlCasares">Carl Casares</label>
             </div>
             <div>
-              <input type="checkbox" id="EJ Garcia" name="EJ Garcia" />
-              <label for = "EJ Garcia">EJ Garcia</label>
+              <input type="checkbox" id="EJGarcia" name="EJ Garcia" />
+              <label for = "EJGarcia">EJ Garcia</label>
             </div>
             <div>
-              <input type="checkbox" id="Jonathan Nguyen" name="Jonathan Nguyen" />
-              <label for = "Jonathan Nguyen">Jonathan Nguyen</label>
+              <input type="checkbox" id="JonathanNguyen" name="Jonathan Nguyen" />
+              <label for = "JonathanNguyen">Jonathan Nguyen</label>
             </div>
             <div>
               <input type="checkbox" id="Seulgi" name="Seulgi" />
