@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!-- headers are for introductory content -->
+ <!-- h1 are the biggest headers -->
+<header><h1>MEETING MINUTES!</h1></header>
+<!-- nav is for a set of navigation links -->
+<nav class="bar">
+    <!-- ul is an unordered bullet list -->
+     <!-- li is for an item in an ol or ul list -->
+    <ul> 
+        <!-- a defines a hyperlink -->
+        <li> <a href=https://ucsd.edu>UCSD</a></li>
+        <li> <a href=https://canvas.ucsd.edu>UCSD Canvas</a></li>
+        <li> <a href=https://www.youtube.com/watch?v=FyG21rXCxlY>Red Velvet Cosmic</a></li>
+    </ul>
+</nav>
+<html lang="en">
+  <head>
+    <!-- links are for hyperlinks to jump to an external link or another document -->
+    <link rel="icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <!-- meta is for metadata -->
+    <meta charset="utf-8"/>
+    <meta name="author" content="Carl Casares">
+    <title>Meeting Minutes!</title>
+
+  </head>
+  <body>
+    <!-- div groups elements -->
+    <div class="main-container">
+        <details>
+        <!-- details and summary together create expandable and collapsable content -->
+        <summary>Track the <strong>meeting minutes</strong> of <em>your</em> group!</summary>
+        <!-- ol is an ordered list -->
+        <ol>
+          <li> <b>Meet</b></li>
+          <li> <i>Record</i></li>
+          <li>Reference and Review!</li>
+        </ol>
+      </details>
+        <h3>Start now!</h3>
+        <!-- button -->
+        <button type="button" onclick="alert('Have an amazing meeting!')">Press me!</button>
+        <!-- span is an inline container for mark up on text -->
+        <p><span>This meeting minutes website is an assignment for CSE 110.</span></p>
+        <!-- p is the paragraph tag -->
+        <!-- b is for bold, strong is for emphasis of importance of the content -->
+        <p>This website was made <b>soley</b> with <strong>HTML</strong>!</p>
+        <!-- i is for italics, em is for emphasis of the importance of the content -->
+        <p><i>No</i> CSS was used, <em>only</em> HTML</p>
+        <label for="mood">Choose your current mood from the list:</label>
+        <input list="moods" name="mood" id="mood"  />
+        <!-- datalist provides a set of options to choose from -->
+        <datalist id="moods">
+          <!-- options of datalist -->
+          <option value="Happy"></option>
+          <option value="Sad"></option>
+          <option value="Stressed"></option>
+          <option value="Exhausted"></option>
+          <option value="Excited"></option>
+        </datalist>
+      <br>
+      <label for="username">Username (5 characters):</label>
+      <!-- input of text -->
+      <input
+        type="text"
+        id="username"
+        name="username"
+        required
+        minlength="5"
+        maxlength="5"  
+        size="10" />
+      <label for="username">Password (10-12 characters):</label>
+      <input
+        type="text"
+        id="password"
+        name="password"
+        required
+        minlength="10"
+        maxlength="12"  
+        size="10" />
+        <!-- hr is a horizontal line -->
+        <hr>
+        <main>
+        <!-- section are for logically separate parts of a page -->
+        <section>
+          <h3>Meeting Title: Ideation and Visuals </h3>
+          <label for="topic-select">Choose a topic:</label>
+          <!-- select creates a drop-down list -->
+          <select name="topics" id="topic-selection">
+            <option value="">Please choose a topic option</option>
+            <option value="Ideation">Ideation</option>
+            <option value="Working">Working</option>
+            <option value="Reviewing">Reviewing</option>
+          </select>
+        </section> 
+        <section>
+          <label for="Meeting Date">Meeting date:</label>
+          <!-- input of date -->
+          <input
+            type="date"
+            id="start"
+            name="trip-start"
+            value="2025-04-10"
+            min="2025-04-10"
+            max="2025-12-31" />
+        </section> 
+        
+        <section>
+          <form>
+            <fieldset>
+              <!-- input radio only allows one option to be selected, groups distinguished by name -->
+              <legend>Choose this meeting's check-in code</legend>
+                <input type="radio" id="A" name="code" value="A" />
+                <label for ="A">A</label><br />
+
+                <input type="radio" id="B" name="code" value="B"/>
+                <label for ="B">B</label><br />
+
+                <input type="radio" id="C" name="code" value="C"/>
+                <label for ="C">C</label><br />
+
+                <input type="radio" id="D" name="code" value="D"/>
+                <label for ="D">D</label> 
+            </fieldset>
+          </form>
+        </section>
+        <section>
+          Present Members:
+          <li> Carl Casares</li>
+          <li> EJ Garcia</li>
+          <li> Jonathan Nguyen  </li>
+          <li> Kang Seulgi</li>
+        </section> 
+        <hr>
+        <section>
+          <!-- forms are for submitting information -->
+          <form>
+            <p><label for="agenda">Agenda</label></p>
+            <!-- textarea collects text in a form -->
+            <textarea id="agenda" name="agenda" rows="4" cols="50">Discuss the visual aspect of the website, finalize icon, sketch, and ideate.</textarea>
+            <!-- br is for a line break -->
+            <br>
+        </section> 
+        <section>
+          <form>
+            <p><label for="unfinished">Unfinished Business:</label></p>
+            <textarea id="unfinished" name="unfinished" rows="4" cols="50">We have to decide on the icon!</textarea>
+            <br>
+          </form>
+        </section> 
+        <section>
+          <form>
+            <p><label for="new">New Discussion:</label></p>
+            <textarea id="new" name="new" rows="4" cols="50">We sketched and ideated!</textarea>
+            <br>
+        </section> 
+        <section>
+          <form>
+            <p><label for="QCC">Questions, Comments, & Concerns:</label></p>
+            <textarea id="QCC" name="QCC" rows="4" cols="50">Who is bringing the food next meeting????</textarea>
+            <br>
+        </section> 
+        <section>
+          <!-- fieldset groups labels -->
+          <fieldset>
+            <legend>Choose this meeting's MVP's:</legend>
+            <div>
+              <!-- input checkbox defines a checkbox -->
+              <input type="checkbox" id="Carl Casares" name="Carl Casares" />
+              <label for = "Carl Casares">Carl Casares</label>
+            </div>
+            <div>
+              <input type="checkbox" id="EJ Garcia" name="EJ Garcia" />
+              <label for = "EJ Garcia">EJ Garcia</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Jonathan Nguyen" name="Jonathan Nguyen" />
+              <label for = "Jonathan Nguyen">Jonathan Nguyen</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Seulgi" name="Seulgi" />
+              <label for = "Seulgi">Seulgi</label>
+            </div>
+          </fieldset>
+
+        </section>
+        <section>
+          <h3>The Artist we played during the meeting: <b>Red Velvet</b></h3>
+        <!-- img is for images -->
+        <img src="RedVelvetCosmic.jpg" alt="Red Velvet Cosmic">
+        </section> 
+        <section>
+          <!-- for audio -->
+          <audio controls="controls" autoplay="autoplay">
+            <source src="New Recording 307.m4a" type="audio/mp4" />
+         </audio>
+        </section>
+        <section>
+          <p>Post Meeting Hang Out!</p>
+          <!-- for videos -->
+          <video width="400" controls autoplay>
+            <source src="IMG_0922.MOV" type="video/mp4">
+          </video>
+        </section>
+      </main>
+    </div>
+    <section>
+      <h2>Non-Functional Form</h2>
+      <form>
+      <fieldset>
+        <!-- input radio only allows one option to be selected, groups distinguished by name -->
+        <legend>When did Red Velvet Debut?</legend>
+          <input type="radio" id="A" name="code1" value="A" />
+          <label for ="A">2014</label><br />
+
+          <input type="radio" id="B" name="code1" value="B"/>
+          <label for ="B">2015</label><br />
+
+          <input type="radio" id="C" name="code1" value="C"/>
+          <label for ="C">2016</label><br />
+
+          <input type="radio" id="D" name="code1" value="D"/>
+          <label for ="D">2019</label> 
+      </fieldset>
+      <p>Discuss Red Velvet's concept:</p>
+      <textarea id="agenda" name="agenda" rows="4" cols="50">Answer here...</textarea>
+      <p>Choose Red Velvet's Best Concept:</p>
+      <label for="concept">Choose from the list:</label>
+      <input list="concepts" name="concept" id="concept"  />
+      <datalist id="concepts">
+        <!-- options of datalist -->
+        <option value="Summer"></option>
+        <option value="Bach/Artsy"></option>
+        <option value="Horror"></option>
+        <option value="Midsommar"></option>
+        <option value="Festival"></option>
+      </datalist>
+      <p>Red or Velvet?</p>
+      <label for="select">Choose one:</label>
+      <!-- select creates a drop-down list -->
+      <select name="select" id="selection">
+        <option value="">Please choose a topic option</option>
+        <option value="Red">Red</option>
+        <option value="Velvet">Velvet</option>
+        <option value="Red Velvet">Red Velvet</option>
+      </select>
+      <br>
+      <fieldset>
+        <legend>Red Velvet's Members Are</legend>
+        <div>
+          <!-- input checkbox defines a checkbox -->
+          <input type="checkbox" id="Irene" name="Irene" />
+          <label for = "Irene">Irene</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Seulgi" name="Seulgi" />
+          <label for = "Seulgi">Seulgi</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Wendy" name="Wendy" />
+          <label for = "Wendy">Wendy</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Joy" name="Joy" />
+          <label for = "Joy">Joy</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Yeri" name="Yeri" />
+          <label for = "Yeri">Yeri</label>
+        </div>
+      </fieldset>
+          <label for="bias">Bias:</label>
+      <!-- input of text -->
+          <input
+            type="text"
+            id="bias"
+            name="bias"
+            required
+            minlength="4"
+            maxlength="10"  
+            size="10" />
+    <p>Red Velvet's Last Comeback Was On: </p>
+    <section>
+      <label for="Meeting Date">Last Comeback date:</label>
+      <!-- input of date -->
+      <input
+        type="date"
+        id="cb"
+        name="cb-date"
+        value="2024-06-24"
+        min="2024-01-01"
+        max="2025-01-01" />
+    </section> 
+    <br>
+    <button type="button1" onclick="alert('Submitted!')">Submit</button>
+    </form>
+    </section>
+  </body>
+  <!-- footers are for concluding remarks in a page -->
+  <footer> <p> Thank you for using this website! </p>
+  <p>Author: Carl Casares </p>
+  </footer>
+</html>
