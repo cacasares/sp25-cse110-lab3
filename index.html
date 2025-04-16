@@ -15,21 +15,21 @@
   </head>
 <!-- headers are for introductory content -->
  <!-- h1 are the biggest headers -->
-<header>
-<h1>MEETING MINUTES!</h1>
-<nav class="bar">
-  <!-- ul is an unordered bullet list -->
-   <!-- li is for an item in an ol or ul list -->
-  <ul> 
-      <!-- a defines a hyperlink -->
-      <li> <a href=https://ucsd.edu>UCSD</a></li>
-      <li> <a href=https://canvas.ucsd.edu>UCSD Canvas</a></li>
-  </ul>
-</nav>
-</header>
 <!-- nav is for a set of navigation links -->
 
   <body>
+    <header>
+      <h1>MEETING MINUTES!</h1>
+      <nav class="bar">
+        <!-- ul is an unordered bullet list -->
+         <!-- li is for an item in an ol or ul list -->
+        <ul> 
+            <!-- a defines a hyperlink -->
+            <li> <a href=https://ucsd.edu>UCSD</a></li>
+            <li> <a href=https://canvas.ucsd.edu>UCSD Canvas</a></li>
+        </ul>
+      </nav>
+    </header>
     <!-- div groups elements -->
     <div class="main-container">
         <details>
@@ -49,7 +49,7 @@
         <p><span>This meeting minutes website is an assignment for CSE 110.</span></p>
         <!-- p is the paragraph tag -->
         <!-- b is for bold, strong is for emphasis of importance of the content -->
-        <p>This website was made <b>soley</b> with <strong>HTML</strong>!</p>
+        <p>This website was made <b>solely</b> with <strong>HTML</strong>!</p>
         <!-- i is for italics, em is for emphasis of the importance of the content -->
         <p><i>No</i> CSS was used, <em>only</em> HTML</p>
         <label for="mood">Choose your current mood from the list:</label>
@@ -136,23 +136,22 @@
           <!-- forms are for submitting information -->
           <form>
             <p><label for="agenda">Agenda</label></p>
-            <!-- textarea collects text in a form -->
             <textarea id="agenda" name="agenda" rows="4" cols="50">Discuss the visual aspect of the website, finalize icon, sketch, and ideate.</textarea>
-            <!-- br is for a line break -->
             <br>
-          <form>
+
             <p><label for="unfinished">Unfinished Business:</label></p>
             <textarea id="unfinished" name="unfinished" rows="4" cols="50">We have to decide on the icon!</textarea>
             <br>
-          </form>
-          <form>
+
             <p><label for="new">New Discussion:</label></p>
             <textarea id="new" name="new" rows="4" cols="50">We sketched and ideated!</textarea>
             <br>
-          <form>
+
             <p><label for="QCC">Questions, Comments, & Concerns:</label></p>
-            <textarea id="QCC" name="QCC" rows="4" cols="50">Who is bringing the food next meeting????</textarea>
+            <textarea id="QCC" name="QCC" rows="4" cols="50"></textarea>
             <br>
+          </form>
+
           <!-- fieldset groups labels -->
           <fieldset>
             <legend>Choose this meeting's MVP's:</legend>
@@ -275,9 +274,10 @@
     <br>
     <button type="button" onclick="alert('Submitted!')">Submit</button>
     </form>
+      <!-- footers are for concluding remarks in a page -->
+    <footer> <p> Thank you for using this website! </p>
+    <p>Author: Carl Casares </p>
+    </footer>
   </body>
-  <!-- footers are for concluding remarks in a page -->
-  <footer> <p> Thank you for using this website! </p>
-  <p>Author: Carl Casares </p>
-  </footer>
+
 </html>
