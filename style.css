@@ -165,7 +165,6 @@ footer{
   background-color: rgb(231, 183, 167);
   padding: 25px 0px 75px 15px;
 }
-
 section:has(h3) {
   border: 2px dashed pink;
   padding: 15px;
