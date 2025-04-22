@@ -47,7 +47,7 @@ button:active {
 /* id selector, applies to id selector with id passord */
 #password {
   /* hsl colors */
-  background-color: color(sRGB 0 0.5 1 / 50%);
+  background-color: pink;
   font-weight: bold;
   position: static;
   border-style: solid;
