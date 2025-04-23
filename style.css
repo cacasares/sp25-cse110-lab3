@@ -1,17 +1,3 @@
-/* background color and margin and padding long-hand notation */
-header {
-    /* rgb colors */
-    background-color: rgb(231, 183, 167);
-    margin-top: 1cm;
-    margin-right: 1ch;
-    margin-left: 1vw;
-    margin-bottom: 5px;
-    padding-top: 50px;
-    padding-left: 0px;
-    padding-right: 0in;
-    padding-bottom: 5vh;
-}
-
 /* universal selector, applies box-sizing and reset margin/padding to everything */
 * {
   box-sizing: 
@@ -19,6 +5,22 @@ header {
   margin: 1em;
   padding: 0px;
 }
+/* background color and margin and padding long-hand notation */
+header {
+    /* wider-gamut color */
+    background-color: color(display-p3 0.9 0.6 0.5);
+    /* margin long hand */
+    margin-top: 1cm;
+    margin-right: 1ch;
+    margin-left: 1vw;
+    margin-bottom: 5px;
+    /* padding long hand */
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 0in;
+    padding-bottom: 5vh;
+}
+/* flex container for flexbox with 3 properties */
 .flex-cont{
   display: flex;
   justify-content: space-around;
@@ -27,14 +29,12 @@ header {
   gap: 5px;
   padding: 5px;
 }
+/* grid container for grid with 3 properties */
 .grid-cont{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid: auto-flow / 1fr 1fr 1fr;
   gap: 10px;
-}
-button:active {
-  background-color: rgb(247, 169, 169);
-  transform: scale(0.97);
 }
 
 /* class selector, applies to elements with class main-container */
@@ -44,24 +44,26 @@ button:active {
   font-weight: bold;
   width: 95%;
   min-width: 300px;
-  margin: 0 auto; /* This is horizontal centering */
+  margin: auto; /* This is horizontal centering */
 }
 /* id selector, applies to id selector with id username */
 #username {
   /* hsl colors */
   background-color: hsl(329, 84%, 93%);
   font-weight: bold;
+  /* border elements */
   border-style: solid;
   border-color: purple;
   border-width: 2px;
   border-radius: 10px;
   padding: 10px;
   display: inline-block;
+  position: relative;
+  top: 10px
   
 }
 /* id selector, applies to id selector with id passord */
 #password {
-  /* hsl colors */
   background-color: pink;
   font-weight: bold;
   position: static;
@@ -70,6 +72,9 @@ button:active {
   border-width: 2px;
   border-radius: 10px;
   padding: 10px;
+  /* fallback of background colors */
+  background: pink;
+  background: linear-gradient(to right, #ffffff, pink);
   
 }
 
@@ -85,7 +90,7 @@ body {
       background-color: lightblue; /* Change background for small screens */
     }
   }
-/* selctor list for h1 and h2 */
+/* selctor list for h1 and h2, 3rd party font*/
 h1, h2{
   font-family: 'Special Gothic Expanded One', sans-serif;
   font-weight: bold;
@@ -101,10 +106,6 @@ h1{
 input[type="text"] {
   border: 2px solid #ccc;
   padding: 8px;
-}
-/* pseudoclass selector, style links on hover */
-a:hover {
-  color: rgb(255, 255, 255);
 }
 
 /* descendant combinator that styles all spans inside paragraphs */
@@ -144,15 +145,25 @@ nav.bar {
 input, select, textarea, button, label {
   font-family: 'Verdana', sans-serif;
 }
-button{
+button {
   display: inline;
   padding: 12px 16px;
-  background-color: #a66;
+  background-color: color-mix(in srgb, pink 40%, rgb(236, 190, 212));
   color: white;
   border-radius: 8px;
   border: none;
   cursor: pointer;
+/* changes color when you hover */
+  &:hover {
+    background-color: #944;
+  }
+/* active effect upon click */
+  &:active {
+    background-color: rgb(247, 169, 169);
+    transform: scale(0.97);
+  }
 }
+
 /* keep images nice */
 img {
   max-width: 100%;
@@ -161,8 +172,10 @@ img {
 }
 
 footer{
+  /* margin shorthand */
   margin: 5px 50px 75px 15px;
   background-color: rgb(231, 183, 167);
+  /* padding shorthand */
   padding: 25px 0px 75px 15px;
 }
 section:has(h3) {
