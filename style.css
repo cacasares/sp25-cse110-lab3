@@ -5,6 +5,10 @@
   margin: 1em;
   padding: 0px;
 }
+/* nesting selector to make text black */
+& {
+  color: rgb(0, 0, 0);
+}
 /* background color and margin and padding long-hand notation */
 header {
     /* wider-gamut color */
