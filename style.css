@@ -159,7 +159,7 @@ button {
   border-radius: 8px;
   border: none;
   cursor: pointer;
-changes color when you hover
+/* changes color when you hover */
   &:hover {
     background-color: #944;
   }
@@ -167,16 +167,16 @@ changes color when you hover
   &:active {
     background-color: rgb(247, 169, 169);
     transform: scale(0.97);
-  }
+  } 
 }
-button:hover {
+/* button:hover {
   background-color: #944;
 }
 
 button:active {
   background-color: rgb(247, 169, 169);
   transform: scale(0.97);
-}
+} */
 
 /* keep images nice */
 img {
